@@ -333,9 +333,9 @@ class HANLinkPrediction(BaseFlow):
                 self.logger.train_info(
                     f"Epoch: {epoch:03d}, train loss: {loss:.4f}. " + self.logger.metric2str(val_metric))
                 early_stop = stopper.loss_step(val_metric['valid']['loss'], self.model)
-                if early_stop:
-                    self.logger.train_info(f'Early Stop!\tEpoch:{epoch:03d}.')
-                    break
+                # if early_stop:
+                #     self.logger.train_info(f'Early Stop!\tEpoch:{epoch:03d}.')
+                #     break
         stopper.load_model(self.model)
         # Test
         if self.args.test_flag:

@@ -217,7 +217,7 @@ def build_dataset_v2(dataset, task):
 
 CLASS_DATASETS = {
     "dblp4GTN": "openhgnn.dataset.DBLP4GTNDataset",
-    # "acm4GTN": "openhgnn.dataset.ACM4GTNDataset",
+    "acm4GTN": "openhgnn.dataset.ACM4GTNDataset",
     "imdb4GTN": "openhgnn.dataset.IMDB4GTNDataset",
     "alircd_small": "openhgnn.dataset.AliRCDSmallDataset",
     "alircd_session1": "openhgnn.dataset.AliRCDSession1Dataset",

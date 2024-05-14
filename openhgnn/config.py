@@ -40,7 +40,17 @@ class Config(object):
             self.seed = conf.getint("General", "seed")
             self.patience = conf.getint("General", "patience")
             self.mini_batch_flag = conf.getboolean("General", "mini_batch_flag")
-
+        elif self.model_name == "SGC":
+            self.k = conf.getint("SGC","k")
+            self.dropout = conf.getfloat("SGC","dropout")
+            self.lr = conf.getfloat("SGC","learning_rate")
+            self.weight_decay = conf.getfloat("SGC","weight_decay")
+            self.seed = conf.getint("General","seed")
+            self.in_dim = conf.getint("General","hidden_dim")
+            self.hidden_dim = conf.getint("General","hidden_dim")
+            self.max_epoch = conf.getint("General","max_epoch")
+            self.patience = conf.getint("General","patience")
+            self.mini_batch_flag = conf.getboolean("General","mini_batch_flag")
         elif self.model_name == "DisenKGAT":
 
             self.name = conf.get("DisenKGAT","name")

@@ -1,0 +1,1 @@
+/localscratch/spool/slurmd/job26262607/slurm_script: line 4: 209596 Segmentation fault      (core dumped) python main.py -m GTN -d imdb4GTN -t node_classification -g 0 --use_best_config >> ./log_files/GTN_imdb4GTN_node_classification.log 2>&1

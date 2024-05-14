@@ -17,9 +17,10 @@ if __name__ == '__main__':
     parser.add_argument('--use_best_config', action='store_true', help='will load utils.best_config')
     parser.add_argument('--load_from_pretrained', action='store_true', help='load model from the checkpoint')
     parser.add_argument('--use_database',action='store_true',help = 'use database')
+    parser.add_argument('--config','-c', default = 'openhgnn/config.ini',type=str,help = 'use config')
     args = parser.parse_args()
 
     experiment = Experiment(model=args.model, dataset=args.dataset, task=args.task, gpu=args.gpu,
-                            use_best_config=args.use_best_config, load_from_pretrained=args.load_from_pretrained)
+                            use_best_config=args.use_best_config, load_from_pretrained=args.load_from_pretrained,conf_path = args.config )
 
     experiment.run()

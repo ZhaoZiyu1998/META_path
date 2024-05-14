@@ -123,6 +123,8 @@ SUPPORTED_MODELS = {
     'Ingram': 'openhgnn.models.Ingram',
     'RedGNN': 'openhgnn.models.RedGNN',
     'RedGNNT': 'openhgnn.models.RedGNNT',
+    'MLP': 'openhgnn.models.MLP',
+    'SGC': 'openhgnn.models.SGC'
 }
 
 from .HGCL import HGCL
@@ -176,6 +178,8 @@ from .ExpressGNN import ExpressGNN
 from .Ingram import Ingram
 from .RedGNN import RedGNN
 from .RedGNNT import RedGNNT
+from .MLP import MLP
+from .SGC import SGC
 
 __all__ = [
     'BaseModel',

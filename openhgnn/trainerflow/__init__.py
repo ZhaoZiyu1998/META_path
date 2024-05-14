@@ -92,6 +92,8 @@ SUPPORTED_FLOWS = {
     'DisenKGAT_trainer':'openhgnn.trainerflow.DisenKGAT_trainer',
     'RedGNN_trainer': 'openhgnn.trainerflow.RedGNN_trainer',
     'RedGNNT_trainer': 'openhgnn.trainerflow.RedGNNT_trainer',
+    'mlp_nc_trainer': 'openhgnn.trainerflow.MLPNodeClassification',
+    'sgc_nc_trainer': 'openhgnn.trainerflow.SGCNodeClassification'
 }
 
 from .hgcl_trainer import HGCLtrainer
@@ -131,6 +133,8 @@ from .NBF_trainer import *
 from .Ingram_trainer import Ingram_Trainer
 from .DisenKGAT_trainer import *
 from .RedGNNT_trainer import RedGNNTTrainer
+from .mlp_trainer import MLPNodeClassification
+from .sgc_trainer import SGCNodeClassification
 
 __all__ = [
     'BaseFlow',

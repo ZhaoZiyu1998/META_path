@@ -73,7 +73,10 @@ class Experiment(object):
         'ExpressGNN': 'ExpressGNN_trainer',
         'NBF':'NBF_trainer',
         'Ingram': 'Ingram_trainer',
-        'DisenKGAT': 'DisenKGAT_trainer'
+        'DisenKGAT': 'DisenKGAT_trainer',
+        'MLP': 'mlp_nc_trainer',
+        'SGC': 'sgc_nc_trainer'
+
     }
     immutable_params = ['model', 'dataset', 'task']
 
